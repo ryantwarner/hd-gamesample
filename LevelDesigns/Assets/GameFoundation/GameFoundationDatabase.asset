@@ -1,0 +1,694 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8829848164179875614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0045a420c8b2b474eb4c14cf512c1cb5, type: 3}
+  m_Name: damageBuffSpell_GameItem_Detail_Stat
+  m_EditorClassIdentifier: 
+  m_DefaultKeyList: 33bcc909
+  m_DefaultValueList:
+  - type: 0
+    intValue: 1
+  m_StatDefaultIntValues_Keys: 
+  m_StatDefaultIntValues_Values: 
+  m_StatDefaultFloatValues_Keys: 
+  m_StatDefaultFloatValues_Values: []
+--- !u!114 &-7862831593373533811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0045a420c8b2b474eb4c14cf512c1cb5, type: 3}
+  m_Name: sword_GameItem_Detail_Stat
+  m_EditorClassIdentifier: 
+  m_DefaultKeyList: 6c54c811
+  m_DefaultValueList:
+  - type: 0
+    intValue: 10
+  m_StatDefaultIntValues_Keys: 
+  m_StatDefaultIntValues_Values: 
+  m_StatDefaultFloatValues_Keys: 
+  m_StatDefaultFloatValues_Values: []
+--- !u!114 &-7682442981430025709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b88f5bccd054f984d9be6ad05294da40, type: 3}
+  m_Name: _Catalog_Stats
+  m_EditorClassIdentifier: 
+  m_StatDefinitions:
+  - m_Id: damage
+    m_DisplayName: Damage
+    m_StatValueType: 0
+  - m_Id: damageIncrease
+    m_DisplayName: Damage Increase
+    m_StatValueType: 0
+  - m_Id: keyType
+    m_DisplayName: KeyType
+    m_StatValueType: 0
+  - m_Id: aIDetectionRange
+    m_DisplayName: AIDetectionRange
+    m_StatValueType: 1
+--- !u!114 &-7222417169920311281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b084f2c338a4185ab8badeed2a3947, type: 3}
+  m_Name: _Catalog_Inventories
+  m_EditorClassIdentifier: 
+  m_Categories:
+  - m_Id: key
+    m_Hash: -1970230359
+    m_DisplayName: Key
+  m_CollectionDefinitions:
+  - {fileID: 7325991082810355227}
+  - {fileID: 7736929895329922957}
+  - {fileID: -5187899624381078803}
+  m_ItemDefinitions:
+  - {fileID: 4351525264427372307}
+  - {fileID: 9170133947170702918}
+  - {fileID: -7187582049165078904}
+  - {fileID: 2345543145202247479}
+  - {fileID: 5007957240981680602}
+  - {fileID: 8793224511319633443}
+  - {fileID: -6108332381965486099}
+  m_DefaultCollectionDefinitions:
+  - m_Id: keychain
+    m_DisplayName: Keychain
+    m_CollectionDefinitionHash: 1780527896
+--- !u!114 &-7187582049165078904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbd052539327467295d2009d33aa660, type: 3}
+  m_Name: damageBuffSpell_InventoryItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Damage Buff Spell
+  m_Id: damageBuffSpell
+  m_ReferenceDefinition: {fileID: -1336375228710925188}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues: []
+--- !u!114 &-6108332381965486099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbd052539327467295d2009d33aa660, type: 3}
+  m_Name: yellowKey_InventoryItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Yellow Key
+  m_Id: yellowKey
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues:
+  - {fileID: 1478239300079592412}
+  - {fileID: 6717103402379442212}
+--- !u!114 &-5473678525036752874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15cb36b4e39d04058878d632b15e1f5b, type: 3}
+  m_Name: coin_InventoryItem_Detail_Analytics
+  m_EditorClassIdentifier: 
+--- !u!114 &-5187899624381078803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a121bc2d8644fcb8f5f5ed98363908, type: 3}
+  m_Name: keychain_Inventory
+  m_EditorClassIdentifier: 
+  m_DisplayName: Keychain
+  m_Id: keychain
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues: []
+  m_DefaultItems: []
+--- !u!114 &-4000940600254633415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbf3f8defcf78f428d1448085483eff, type: 3}
+  m_Name: sword_GameItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Sword
+  m_Id: sword
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues:
+  - {fileID: -7862831593373533811}
+--- !u!114 &-3229983654861967872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1e6757beb314b4585f48e4e2c57c6f, type: 3}
+  m_Name: apple_GameItem_Detail_SpriteAssets
+  m_EditorClassIdentifier: 
+  m_Names:
+  - thumbnail
+  m_Values:
+  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+--- !u!114 &-3142122274711720867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1e6757beb314b4585f48e4e2c57c6f, type: 3}
+  m_Name: key_GameItem_Detail_SpriteAssets
+  m_EditorClassIdentifier: 
+  m_Names:
+  - Sprite
+  m_Values:
+  - {fileID: 21300000, guid: d7ba9a94ef724a248ac98eae3ff2a3f2, type: 3}
+--- !u!114 &-1336375228710925188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbf3f8defcf78f428d1448085483eff, type: 3}
+  m_Name: damageBuffSpell_GameItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Damage Buff Spell
+  m_Id: damageBuffSpell
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues:
+  - {fileID: -8829848164179875614}
+--- !u!114 &-1046914953001081342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbf3f8defcf78f428d1448085483eff, type: 3}
+  m_Name: coin_GameItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Coin
+  m_Id: coin
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues: []
+--- !u!114 &-1014995480461035146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad1838c60d074d51ad3002c9f025f98, type: 3}
+  m_Name: coin_InventoryItem_Detail_Currency
+  m_EditorClassIdentifier: 
+  m_CurrencyType: 0
+  m_CurrencySubType: 0
+--- !u!114 &-442504441095448391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1e6757beb314b4585f48e4e2c57c6f, type: 3}
+  m_Name: blueKey_InventoryItem_Detail_SpriteAssets
+  m_EditorClassIdentifier: 
+  m_Names:
+  - Sprite
+  m_Values:
+  - {fileID: 21300000, guid: 1a1da36a104725048b8d2388fb8d321d, type: 3}
+--- !u!114 &-138367394179009518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbf3f8defcf78f428d1448085483eff, type: 3}
+  m_Name: key_GameItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Key
+  m_Id: key
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues:
+  - {fileID: 1185575458211822795}
+  - {fileID: -3142122274711720867}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d6d794703b5406883240f543e5b084, type: 3}
+  m_Name: GameFoundationDatabase
+  m_EditorClassIdentifier: 
+  m_GameItemCatalog: {fileID: 8571840153233314131}
+  m_InventoryCatalog: {fileID: -7222417169920311281}
+  m_StatCatalog: {fileID: -7682442981430025709}
+--- !u!114 &1185575458211822795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0045a420c8b2b474eb4c14cf512c1cb5, type: 3}
+  m_Name: key_GameItem_Detail_Stat
+  m_EditorClassIdentifier: 
+  m_DefaultKeyList: 3dfc8eb5
+  m_DefaultValueList:
+  - type: 0
+    intValue: 1
+  m_StatDefaultIntValues_Keys: 
+  m_StatDefaultIntValues_Values: 
+  m_StatDefaultFloatValues_Keys: 
+  m_StatDefaultFloatValues_Values: []
+--- !u!114 &1478239300079592412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0045a420c8b2b474eb4c14cf512c1cb5, type: 3}
+  m_Name: yellowKey_InventoryItem_Detail_Stat
+  m_EditorClassIdentifier: 
+  m_DefaultKeyList: 3dfc8eb5
+  m_DefaultValueList:
+  - type: 0
+    intValue: 3
+  m_StatDefaultIntValues_Keys: 
+  m_StatDefaultIntValues_Values: 
+  m_StatDefaultFloatValues_Keys: 
+  m_StatDefaultFloatValues_Values: []
+--- !u!114 &2345543145202247479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbd052539327467295d2009d33aa660, type: 3}
+  m_Name: apple_InventoryItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Apple
+  m_Id: apple
+  m_ReferenceDefinition: {fileID: 4524704198439261374}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues: []
+--- !u!114 &2818387505703749972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0045a420c8b2b474eb4c14cf512c1cb5, type: 3}
+  m_Name: redKey_InventoryItem_Detail_Stat
+  m_EditorClassIdentifier: 
+  m_DefaultKeyList: 3dfc8eb5
+  m_DefaultValueList:
+  - type: 0
+    intValue: 1
+  m_StatDefaultIntValues_Keys: 
+  m_StatDefaultIntValues_Values: 
+  m_StatDefaultFloatValues_Keys: 
+  m_StatDefaultFloatValues_Values: []
+--- !u!114 &3673837965915910627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbf3f8defcf78f428d1448085483eff, type: 3}
+  m_Name: ultimateBundle_GameItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Ultimate Bundle
+  m_Id: ultimateBundle
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues:
+  - {fileID: 7228073731914810356}
+--- !u!114 &3905817223617798140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0045a420c8b2b474eb4c14cf512c1cb5, type: 3}
+  m_Name: blueKey_InventoryItem_Detail_Stat
+  m_EditorClassIdentifier: 
+  m_DefaultKeyList: 3dfc8eb5
+  m_DefaultValueList:
+  - type: 0
+    intValue: 2
+  m_StatDefaultIntValues_Keys: 
+  m_StatDefaultIntValues_Values: 
+  m_StatDefaultFloatValues_Keys: 
+  m_StatDefaultFloatValues_Values: []
+--- !u!114 &4351525264427372307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbd052539327467295d2009d33aa660, type: 3}
+  m_Name: coin_InventoryItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Coin
+  m_Id: coin
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues:
+  - {fileID: -1014995480461035146}
+  - {fileID: -5473678525036752874}
+--- !u!114 &4524704198439261374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbf3f8defcf78f428d1448085483eff, type: 3}
+  m_Name: apple_GameItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Apple
+  m_Id: apple
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues:
+  - {fileID: -3229983654861967872}
+--- !u!114 &5007957240981680602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbd052539327467295d2009d33aa660, type: 3}
+  m_Name: redKey_InventoryItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Red Key
+  m_Id: redKey
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues:
+  - {fileID: 2818387505703749972}
+  - {fileID: 8508721371091164806}
+--- !u!114 &6717103402379442212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1e6757beb314b4585f48e4e2c57c6f, type: 3}
+  m_Name: yellowKey_InventoryItem_Detail_SpriteAssets
+  m_EditorClassIdentifier: 
+  m_Names:
+  - Sprite
+  m_Values:
+  - {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+--- !u!114 &7228073731914810356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e550a9312aa14d988e8fc7fce0e4ec88, type: 3}
+  m_Name: ultimateBundle_GameItem_Detail_EditorPurchasable
+  m_EditorClassIdentifier: 
+  m_DefaultSourceInventoryId: wallet
+  m_DefaultDestinationInventoryId: main
+  m_Payout:
+    m_OutputItems:
+    - m_DefinitionId: apple
+      m_Quantity: 1
+      m_DestinationInventoryId: 
+  m_Prices:
+  - m_Name: default
+    m_InputItems:
+    - m_TransactionType: 0
+      m_DefinitionId: coin
+      m_Price: 10
+      m_SourceInventoryId: wallet
+--- !u!114 &7325991082810355227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a121bc2d8644fcb8f5f5ed98363908, type: 3}
+  m_Name: main_Inventory
+  m_EditorClassIdentifier: 
+  m_DisplayName: Main
+  m_Id: main
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues: []
+  m_DefaultItems: []
+--- !u!114 &7736929895329922957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a121bc2d8644fcb8f5f5ed98363908, type: 3}
+  m_Name: wallet_Inventory
+  m_EditorClassIdentifier: 
+  m_DisplayName: Wallet
+  m_Id: wallet
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues: []
+  m_DefaultItems:
+  - m_DefinitionHash: 1432983389
+    m_DefinitionId: coin
+    m_Quantity: 100
+--- !u!114 &8508721371091164806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1e6757beb314b4585f48e4e2c57c6f, type: 3}
+  m_Name: redKey_InventoryItem_Detail_SpriteAssets
+  m_EditorClassIdentifier: 
+  m_Names:
+  - Sprite
+  m_Values:
+  - {fileID: 21300000, guid: d7ba9a94ef724a248ac98eae3ff2a3f2, type: 3}
+--- !u!114 &8571840153233314131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7bd278f724ab94d891fb484af87b44, type: 3}
+  m_Name: _Catalog_GameItems
+  m_EditorClassIdentifier: 
+  m_Categories: []
+  m_Definitions:
+  - {fileID: -1046914953001081342}
+  - {fileID: -4000940600254633415}
+  - {fileID: -1336375228710925188}
+  - {fileID: 4524704198439261374}
+  - {fileID: 3673837965915910627}
+  - {fileID: -138367394179009518}
+  - {fileID: 8592073508692916806}
+--- !u!114 &8592073508692916806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbf3f8defcf78f428d1448085483eff, type: 3}
+  m_Name: aICharacterStats_GameItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: AICharacterStats
+  m_Id: aICharacterStats
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues:
+  - {fileID: 8700137622398784523}
+--- !u!114 &8700137622398784523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0045a420c8b2b474eb4c14cf512c1cb5, type: 3}
+  m_Name: aICharacterStats_GameItem_Detail_Stat
+  m_EditorClassIdentifier: 
+  m_DefaultKeyList: 4bec4209
+  m_DefaultValueList:
+  - type: 1
+    intValue: 1092616192
+  m_StatDefaultIntValues_Keys: 
+  m_StatDefaultIntValues_Values: 
+  m_StatDefaultFloatValues_Keys: 
+  m_StatDefaultFloatValues_Values: []
+--- !u!114 &8793224511319633443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbd052539327467295d2009d33aa660, type: 3}
+  m_Name: blueKey_InventoryItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Blue Key
+  m_Id: blueKey
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues:
+  - {fileID: 3905817223617798140}
+  - {fileID: -442504441095448391}
+--- !u!114 &9170133947170702918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbd052539327467295d2009d33aa660, type: 3}
+  m_Name: sword_InventoryItem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Sword
+  m_Id: sword
+  m_ReferenceDefinition: {fileID: -4000940600254633415}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues: []

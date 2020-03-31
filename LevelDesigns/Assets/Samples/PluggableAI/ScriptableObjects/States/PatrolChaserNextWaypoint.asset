@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b122725e68a54f4ab757ebf1ffecda7, type: 3}
+  m_Name: PatrolChaserNextWaypoint
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 11400000, guid: 7d57690e00e07604c9f9538bc985be12, type: 2}
+  transitions:
+  - decision: {fileID: 11400000, guid: acf522e4fac89de4d84edb74040e77aa, type: 2}
+    trueState: {fileID: 11400000, guid: 43c1999b93c4e124aa309a78f5051b64, type: 2}
+    falseState: {fileID: 11400000, guid: 0c94314c6282a9d4194a682929995613, type: 2}
+  sceneGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
